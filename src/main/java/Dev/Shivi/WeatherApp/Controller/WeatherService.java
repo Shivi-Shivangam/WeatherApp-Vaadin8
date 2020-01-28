@@ -26,7 +26,7 @@ public class WeatherService {
     public JSONObject getWeather(){
         client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://api.openweathermap.org/data/2.5/weather?q="+getCityName()+"&units="+getUnit()+"&appid=a8871021e39b5e5b1176daef96ca0da6")
+                .url("https://api.openweathermap.org/data/2.5/weather?q="+getCityName()+"&units="+getUnit()+"&appid=API_KEY")
                 .build();
         try {
             response = client.newCall(request).execute();
